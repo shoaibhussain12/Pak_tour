@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+}
+.navbar {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  background-color:#57B4BA !important;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s ease;
+  padding: 6px 12px;
+}
+
+.navbar-nav .nav-link:focus
+.navbar-nav .nav-link:hover {
+  background-color: transparent !important;
+  color: #38bdf8 !important;
+}
+
+.navbar-nav .nav-link:focus {
+  background-color:pink !important;
+
+}
+.btn-primary {
+  background-color:#57B4BA!important;
+  border-color: #38bdf8;
+  padding: 6px 16px;
+}
+
+.btn-primary:hover {
+  border-color: #7e22ce;
+  
+}
+
+.btn-outline-primary {
+  color: #7e22ce;
+  border-color: #7e22ce;
+  padding: 6px 16px;
+}
+
+.btn-outline-primary:hover {
+  background: linear-gradient(45deg,pink );
+  color: white;
+  border-color: transparent;
+}
+
+.navbar-brand img {
+  height: 48px;
+  width: auto;
+  mix-blend-mode: multiply; 
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 6px 12px !important;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .navbar-toggler {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+
+  .navbar-brand img {
+    height: 36px;
+  }
+
+  .btn-primary,
+  .btn-outline-primary {
+    padding: 4px 12px;
+    font-size: 14px;
+  }
+
+  #google-login img {
+    height: 16px !important;
+    margin-right: 6px;
+  }
+
+  #google-login {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .d-flex.gap-2 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  color:black;
+  font-family: "Poppins";
+}
+
+.hero-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero-text button {
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  background-color:#57B4BA !important;
+
+}
+
+.hero-text button:hover {
+  background-color: #0ea5e9;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.page3{
+  font-family: "poppins";
+}
+.container{
+  font-family: "poppins";
+
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+button {
+  background-color:#57B4BA !important;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg,rgb(95, 192, 224)); 
+  color: white;
+}
+h2 {
+  color: #7e22ce;
+}
+
+span.small {
+  color :#57B4BA !important;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+@media (max-width: 480px) {
+  span.small {
+    font-size: 1.2rem; 
+    display: block;
+    margin-top: -50px;
+    
+  }
+  .container{
+    margin-top: -100px;
+
+  }
+}
+.card-title {
+  color: #57B4BA !important;
+  font-weight: bold;
+}
+
+.badge.bg-dark {
+  background-color: #57B4BA !important;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+p{
+  font-weight: 500;
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
